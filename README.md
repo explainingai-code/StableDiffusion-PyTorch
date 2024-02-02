@@ -11,15 +11,20 @@ But both the stages of training use VQVAE only. One can easily change that to va
 For diffusion part, as of now it only implements DDPM with linear schedule.
 
 
-## Stable Diffusion Videos
-
-
+## Stable Diffusion Tutorial Video
+<a href="https://www.youtube.com/watch?v=1BkzNb3ejK4">
+   <img alt="Stable Diffusion Tutorial" src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/4634aad2-f44b-4731-a5f4-f6334017a4c9"
+   width="300">
+</a>
 
 ## Sample Output for Autoencoder on CelebHQ
 Image - Top, Reconstructions - Below
 
+<img src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/2260d618-046e-411c-bea5-0c4cb7438560" width="300">
 
-## Sample Output for LDM on CelebHQ
+## Sample Output for LDM on CelebHQ (not fully converged)
+
+<img src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/212cd84a-9bd1-43f0-93b4-3b8ff9866571" width="300">
 
 
 ## Data preparation
@@ -28,13 +33,13 @@ For setting up the mnist dataset:
 Follow - https://github.com/explainingai-code/Pytorch-VAE#data-preparation
 
 For setting up on CelebHQ, simply download the images from the official site.
-And mention the right path in the configuration.
+And mention the right path in the configuration ```config/celebhq.yaml```.
 
 
 For training on your own dataset 
 * Create your own config and have the path point to images (look at celebhq.yaml for guidance)
 * Create your own dataset class, similar to celeb_dataset.py 
-* Map the dataset name to the right class in the training code 
+* Map the dataset name to the right class in the training code [here](https://github.com/explainingai-code/StableDiffusion-PyTorch/blob/main/tools/train_ddpm_vqvae.py#L40) & similarly in inference and ddpm training/inference code.
 
 
 # Quickstart
