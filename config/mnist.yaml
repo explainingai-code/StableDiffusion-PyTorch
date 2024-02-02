@@ -1,0 +1,64 @@
+dataset_params:
+  im_path: '/Users/tusharkumar/PycharmProjects/explainingai-repos/StableDiffusion-Pytorch/data/train/images'
+  im_channels : 1
+  im_size : 28
+  name: 'mnist'
+
+diffusion_params:
+  num_timesteps : 1000
+  beta_start : 0.0015
+  beta_end : 0.0195
+
+ldm_params:
+  down_channels: [ 128, 256, 256, 256]
+  mid_channels: [ 256, 256]
+  down_sample: [ False, False, False ]
+  attn_down : [True, True, True]
+  time_emb_dim: 256
+  norm_channels : 32
+  num_heads : 16
+  conv_out_channels : 128
+  num_down_layers: 2
+  num_mid_layers: 2
+  num_up_layers: 2
+
+autoencoder_params:
+  z_channels: 3
+  codebook_size : 20
+  down_channels : [32, 64, 128]
+  mid_channels : [128, 128]
+  down_sample : [True, True]
+  attn_down : [False, False]
+  norm_channels: 32
+  num_heads: 16
+  num_down_layers : 1
+  num_mid_layers : 1
+  num_up_layers : 1
+
+train_params:
+  seed : 1111
+  task_name: 'mnist'
+  ldm_batch_size: 64
+  autoencoder_batch_size: 64
+  disc_start: 1000
+  disc_weight: 0.5
+  codebook_weight: 1
+  commitment_beta: 0.2
+  perceptual_weight: 1
+  kl_weight: 0.000005
+  ldm_epochs : 100
+  autoencoder_epochs : 10
+  num_samples : 25
+  num_grid_rows : 5
+  ldm_lr: 0.00001
+  autoencoder_lr: 0.0001
+  autoencoder_acc_steps : 1
+  autoencoder_img_save_steps : 8
+  save_latents : False
+  vae_latent_dir_name : 'vae_latents'
+  vqvae_latent_dir_name : 'vqvae_latents'
+  ldm_ckpt_name: 'ddpm_ckpt.pth'
+  vqvae_autoencoder_ckpt_name: 'vqvae_autoencoder_ckpt.pth'
+  vae_autoencoder_ckpt_name: 'vae_autoencoder_ckpt.pth'
+  vqvae_discriminator_ckpt_name: 'vqvae_discriminator_ckpt.pth'
+  vae_discriminator_ckpt_name: 'vae_discriminator_ckpt.pth'

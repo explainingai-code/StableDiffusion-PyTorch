@@ -1,0 +1,20 @@
+# Ignore all image files
+*.jpg
+*.png
+*.jpeg
+
+# Ignore pycharm and system files
+.DS_Store
+*.idea
+__pycache__
+*.zip
+
+# Ignore dataset files
+*.csv
+*.json
+
+# Ignore checkpoints
+*.pth
+
+# Ignore pickle files
+*.pkl
