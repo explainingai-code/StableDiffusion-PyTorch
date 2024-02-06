@@ -1,5 +1,5 @@
 dataset_params:
-  im_path: '/Users/tusharkumar/PycharmProjects/explainingai-repos/StableDiffusion-Pytorch/data/train/images'
+  im_path: 'data/mnist/train/images'
   im_channels : 1
   im_size : 28
   name: 'mnist'
