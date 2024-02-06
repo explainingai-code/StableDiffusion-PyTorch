@@ -13,7 +13,7 @@ For diffusion part, as of now it only implements DDPM with linear schedule.
 
 ## Stable Diffusion Tutorial Video
 <a href="https://www.youtube.com/watch?v=1BkzNb3ejK4">
-   <img alt="Stable Diffusion Tutorial" src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/4634aad2-f44b-4731-a5f4-f6334017a4c9"
+   <img alt="Stable Diffusion Tutorial" src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/6267f576-11aa-4c48-968b-8504275d645d"
    width="300">
 </a>
 
