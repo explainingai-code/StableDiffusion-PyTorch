@@ -13,8 +13,8 @@ For diffusion part, as of now it only implements DDPM with linear schedule.
 
 ## Stable Diffusion Tutorial Video
 <a href="https://www.youtube.com/watch?v=1BkzNb3ejK4">
-   <img alt="Stable Diffusion Tutorial" src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/6267f576-11aa-4c48-968b-8504275d645d"
-   width="300">
+   <img alt="Stable Diffusion Tutorial" src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/7a24d114-38bd-43a8-9819-3afa112f39ab"
+   width="400">
 </a>
 
 ## Sample Output for Autoencoder on CelebHQ
