@@ -41,12 +41,6 @@ def infer(args):
                                 im_size=dataset_config['im_size'],
                                 im_channels=dataset_config['im_channels'])
     
-    model = VQVAE(im_channels=dataset_config['im_channels'],
-                  model_config=autoencoder_config).to(device)
-    model.load_state_dict(torch.load(os.path.join(train_config['task_name'],
-                                                    train_config['vqvae_autoencoder_ckpt_name']),
-                                     map_location=device))
-    
     # This is only used for saving latents. Which as of now
     # is not done in batches hence batch size 1
     data_loader = DataLoader(im_dataset,
