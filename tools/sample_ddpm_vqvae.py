@@ -24,10 +24,7 @@ def sample(model, scheduler, train_config, diffusion_model_config,
                       autoencoder_model_config['z_channels'],
                       im_size,
                       im_size)).to(device)
-    xt = torch.randn((2,
-                      autoencoder_model_config['z_channels'],
-                      im_size,
-                      im_size)).to(device)
+
     save_count = 0
     for i in tqdm(reversed(range(diffusion_config['num_timesteps']))):
         # Get prediction of noise
