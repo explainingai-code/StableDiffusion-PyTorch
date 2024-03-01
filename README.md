@@ -46,14 +46,12 @@ Image - Top, Reconstructions - Below
 
 ### Sample Output for Text(using CLIP) and Mask Conditioned on CelebHQ (not converged)
 <img src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/78aa92bb-655e-46f6-92e9-a0c59787d700" width="100">
-
-Text -  She is a woman with blond hair
-
+</br>
 <img src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/9fcf66fb-65d7-4c2c-9fc4-9bbe428de11f" width="100">
-
-Text -  She is a woman with black hair
-
+Text -  She is a woman with blond hair
+</br>
 <img src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/44ad67c8-c1e1-4ade-936f-18da92202e55" width="100">
+Text -  She is a woman with black hair
 
 ___
 
