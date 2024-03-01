@@ -1,13 +1,13 @@
 dataset_params:
-  im_path: 'data/CelebAMask-HQ'
+  im_path: '/Users/tusharkumar/Downloads/CelebAMask-HQ'
   im_channels : 3
   im_size : 256
   name: 'celebhq'
 
 diffusion_params:
   num_timesteps : 1000
-  beta_start : 0.0015
-  beta_end : 0.0195
+  beta_start: 0.00085
+  beta_end: 0.012
 
 ldm_params:
   down_channels: [ 256, 384, 512, 768 ]
@@ -21,6 +21,20 @@ ldm_params:
   num_down_layers : 2
   num_mid_layers : 2
   num_up_layers : 2
+  condition_config:
+    condition_types: [ 'text', 'image' ]
+    text_condition_config:
+      text_embed_model: 'clip'
+      train_text_embed_model: False
+      text_embed_dim: 512
+      cond_drop_prob: 0.1
+    image_condition_config:
+      image_condition_input_channels: 18
+      image_condition_output_channels: 3
+      image_condition_h : 512
+      image_condition_w : 512
+      cond_drop_prob: 0.1
+
 
 autoencoder_params:
   z_channels: 3
@@ -56,9 +70,10 @@ train_params:
   autoencoder_acc_steps: 4
   autoencoder_img_save_steps: 64
   save_latents : False
+  cf_guidance_scale : 1.0
   vae_latent_dir_name: 'vae_latents'
   vqvae_latent_dir_name: 'vqvae_latents'
-  ldm_ckpt_name: 'ddpm_ckpt.pth'
+  ldm_ckpt_name: 'ddpm_ckpt_text_image_cond_clip.pth'
   vqvae_autoencoder_ckpt_name: 'vqvae_autoencoder_ckpt.pth'
   vae_autoencoder_ckpt_name: 'vae_autoencoder_ckpt.pth'
   vqvae_discriminator_ckpt_name: 'vqvae_discriminator_ckpt.pth'
