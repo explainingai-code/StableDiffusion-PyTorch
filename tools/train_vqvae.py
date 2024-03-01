@@ -142,7 +142,7 @@ def train(args):
             perceptual_losses.append(train_config['perceptual_weight'] * lpips_loss.item())
             g_loss += train_config['perceptual_weight']*lpips_loss / acc_steps
             losses.append(g_loss.item())
-            g_loss.backward(retain_graph=True)
+            g_loss.backward()
             #####################################
             
             ######### Optimize Discriminator #######
