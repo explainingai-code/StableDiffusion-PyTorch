@@ -15,16 +15,17 @@ But both the stages of training use VQVAE only. One can easily change that to va
 For diffusion part, as of now it only implements DDPM with linear schedule.
 
 
-## Stable Diffusion Tutorial Video
-### Unconditional
+## Stable Diffusion Tutorial Videos
 <a href="https://www.youtube.com/watch?v=1BkzNb3ejK4">
    <img alt="Stable Diffusion Tutorial" src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/7a24d114-38bd-43a8-9819-3afa112f39ab"
    width="400">
 </a>
-
-### Conditional
-
+<a href="https://www.youtube.com/watch?v=hEJjg7VUA8g">
+   <img alt="Stable Diffusion Conditioning Tutorial" src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/0b03cae4-4009-4bd7-8b02-328b0c5f33a3"
+   width="400">
+</a>
 ___  
+
 
 ## Sample Output for Autoencoder on CelebHQ
 Image - Top, Reconstructions - Below
@@ -37,9 +38,22 @@ Image - Top, Reconstructions - Below
 
 ## Sample Output for Conditional LDM
 ### Sample Output for Class Conditioned on MNIST
-### Sample Output for Text Conditioned on CelebHQ (not converged)
-### Sample Output for  Mask Conditioned on CelebHQ (not converged)
-### Sample Output for Text and Mask Conditioned on CelebHQ (not converged)
+![50](https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/46a38d36-3770-4f40-895a-95a16dc6462a)
+![50](https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/1562c41d-e6ff-41cf-8d1e-6909a4240a04)
+![50](https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/0cde44a6-746b-4f05-9422-9604f9436d91)
+![50](https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/7d6b8db2-dab4-4a17-9fe6-570d938669f6)
+![50](https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/6ecc3c61-3668-4305-aa4a-0f0e3cf815a0)
+
+### Sample Output for Text(using CLIP) and Mask Conditioned on CelebHQ (not converged)
+<img src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/78aa92bb-655e-46f6-92e9-a0c59787d700" width="100">
+
+Text -  She is a woman with blond hair
+
+<img src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/9fcf66fb-65d7-4c2c-9fc4-9bbe428de11f" width="100">
+
+Text -  She is a woman with black hair
+
+<img src="https://github.com/explainingai-code/StableDiffusion-PyTorch/assets/144267687/44ad67c8-c1e1-4ade-936f-18da92202e55" width="100">
 
 ___
 
