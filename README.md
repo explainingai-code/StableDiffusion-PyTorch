@@ -300,10 +300,10 @@ During inference of autoencoder the following output will be saved
 
 During training and inference of ddpm following output will be saved
 * During training of unconditional or conditional DDPM we will save the latest checkpoint in ```task_name``` directory
-* During sampling, unconditional sampled image grid for all timesteps in ```task_name/samples/*.png```
-* During sampling, class conditionally sampled image grid for all timesteps in ```task_name/cond_class_samples/*.png``` 
-* During sampling, text only conditionally sampled image grid for all timesteps in ```task_name/cond_text_samples/*.png``` 
-* During sampling, image only conditionally sampled image grid for all timesteps in ```task_name/cond_text_image_samples/*.png``` 
+* During sampling, unconditional sampled image grid for all timesteps in ```task_name/samples/*.png``` . The final decoded generated image will be `x0_0.png` and `x0_999.png` to `x0_1.png` will be latent image predictions of denoising process from T=999 to T=1. Generated Image is at T=0
+* During sampling, class conditionally sampled image grid for all timesteps in ```task_name/cond_class_samples/*.png``` . The final decoded generated image will be `x0_0.png` and `x0_999.png` to `x0_1.png` will be latent image predictions of denoising process from T=999 to T=1. Generated Image is at T=0
+* During sampling, text only conditionally sampled image grid for all timesteps in ```task_name/cond_text_samples/*.png``` . The final decoded generated image will be `x0_0.png` and `x0_999.png` to `x0_1.png` will be latent image predictions of denoising process from T=999 to T=1. Generated Image is at T=0
+* During sampling, image only conditionally sampled image grid for all timesteps in ```task_name/cond_text_image_samples/*.png``` . The final decoded generated image will be `x0_0.png` and `x0_999.png` to `x0_1.png` will be latent image predictions of denoising process from T=999 to T=1. Generated Image is at T=0
 
 
 
