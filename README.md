@@ -217,7 +217,7 @@ Specifically following new keys need to be modified according to your dataset wi
       cond_drop_prob : <probability of dropping class labels>
   ```
 * Create a dataset class similar to mnist where the getitem method now returns a tuple of image_tensor and dictionary of conditional_inputs.
-* For class conditional input will ONLY be the integer class
+* For class, conditional input will ONLY be the integer class
 * ```
     (image_tensor, {
                     'class' : {0/1/.../num_classes}
@@ -273,7 +273,7 @@ Specifically following new keys need to be modified according to your dataset wi
            cond_drop_prob: 0.1
   ```
 * Create a dataset class similar to celebhq where the getitem method now returns a tuple of image_tensor and dictionary of conditional_inputs.
-* For text and mask, conditional input will caption and mask image
+* For text and mask, conditional input will be caption and mask image
 * ```
     (image_tensor, {
                     'text' : 'a sample caption for image_tensor',
