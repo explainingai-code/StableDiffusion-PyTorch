@@ -201,7 +201,7 @@ For training conditional models we need two changes:
 
 Specifically the dataset `getitem` will return the following:
 * `image_tensor` for unconditional training
-* tuple of `(image_tensor,  cond_input )` for class conditional training where cond_input is a dictionary consisting of keys ```{class/text/image}```
+* tuple of `(image_tensor,  cond_input )` for conditional training where cond_input is a dictionary consisting of keys ```{class/text/image}```
 
 ### Training Class Conditional LDM
 The repo provides class conditional latent diffusion model training code for mnist dataset, so one
