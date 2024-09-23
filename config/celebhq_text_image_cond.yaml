@@ -37,7 +37,7 @@ ldm_params:
 
 
 autoencoder_params:
-  z_channels: 3
+  z_channels: 4
   codebook_size : 8192
   down_channels : [64, 128, 256, 256]
   mid_channels : [256, 256]
