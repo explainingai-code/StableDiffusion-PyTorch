@@ -61,7 +61,7 @@ ___
 * ```git clone https://github.com/explainingai-code/StableDiffusion-PyTorch.git```
 * ```cd StableDiffusion-PyTorch```
 * ```pip install -r requirements.txt```
-* Download lpips weights by opening this link in browser(dont use cURL or wget) https://github.com/richzhang/PerceptualSimilarity/blob/master/lpips/weights/v0.1/vgg.pth . Place the downloaded weights file in ```models/weights/v0.1/vgg.pth```
+*  Download lpips weights by opening this link in browser(dont use cURL or wget) https://github.com/richzhang/PerceptualSimilarity/blob/master/lpips/weights/v0.1/vgg.pth and downloading the raw file. Place the downloaded weights file in ```models/weights/v0.1/vgg.pth```
 
 ___  
 
