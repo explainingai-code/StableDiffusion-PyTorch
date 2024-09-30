@@ -57,6 +57,7 @@ ___
 
 ## Setup
 * Create a new conda environment with python 3.8 then run below commands
+* `conda activate <environment_name>`
 * ```git clone https://github.com/explainingai-code/StableDiffusion-PyTorch.git```
 * ```cd StableDiffusion-PyTorch```
 * ```pip install -r requirements.txt```
