@@ -138,7 +138,7 @@ def train(args):
                                                            device=disc_fake_pred.device))
                 gen_losses.append(train_config['disc_weight'] * disc_fake_loss.item())
                 g_loss += train_config['disc_weight'] * disc_fake_loss / acc_steps
-            lpips_loss = torch.mean(lpips_model(output, im)) / acc_steps
+            lpips_loss = torch.mean(lpips_model(output, im))
             perceptual_losses.append(train_config['perceptual_weight'] * lpips_loss.item())
             g_loss += train_config['perceptual_weight']*lpips_loss / acc_steps
             losses.append(g_loss.item())
